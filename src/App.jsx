@@ -5,6 +5,7 @@ import Home from './home'
 import Onchange from './onChange'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Parent from './parent'
+import Parent1 from './useCallback/useCallback'
 import './App.css'
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
 
   return (
     <>
-    <Parent/>
+    {/* <Parent/> */}
+    <Parent1/>
     {/* <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
