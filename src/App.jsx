@@ -9,6 +9,7 @@ import Parent1 from './useCallback/useCallback'
 import Parent2 from './useMemo.jsx/useMemo'
 import Parent3 from './ReactMemo/Parent'
 import Counter1 from './Context/Counter'
+import Counter2 from './useReducer/Counter2'
 import './App.css'
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
     {/* <Parent1/> */}
     {/* <Parent2/> */}
     {/* <Parent3/> */}
-    <Counter1/>
+    {/* <Counter1/> */}
+    <Counter2/>
     {/* <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
