@@ -10,6 +10,7 @@ import Parent2 from './useMemo.jsx/useMemo'
 import Parent3 from './ReactMemo/Parent'
 import Counter1 from './Context/Counter'
 import Counter2 from './useReducer/Counter2'
+import Counter4 from './Redux/Counter4'
 import './App.css'
 import React,{ Suspense } from 'react'
 
@@ -23,9 +24,7 @@ function App() {
     {/* <Parent3/> */}
     {/* <Counter1/> */}
     {/* <Counter2/> */}
-    <Suspense fallback={'loading'}>
-    <Lazy/>
-    </Suspense>
+    <Counter4/>
     {/* <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
@@ -35,7 +34,10 @@ function App() {
       <Route path='/onchange' element={<Onchange/>}/>
     </Routes>
     </BrowserRouter> */}
-    </>
+      {/* <Suspense fallback={'loading'}>
+    <Lazy/>
+    </Suspense> */}
+    </> 
   )
 }
 
