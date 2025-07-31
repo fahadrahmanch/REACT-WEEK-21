@@ -2,7 +2,9 @@ import Counter from './Counter'
 import StopWatch from './stopWatch'
 import Check from './useRef'
 import Home from './home'
+import Onchange from './onChange'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import Parent from './parent'
 import './App.css'
 
 function App() {
@@ -10,15 +12,20 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <Parent/>
+    {/* <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/counter' element={<Counter/>}/>
       <Route path='/stopwatch' element={<StopWatch/>}/>
       <Route path='/check' element={<Check/>}/>
+      <Route path='/onchange' element={<Onchange/>}/>
     </Routes>
-    </BrowserRouter>
-     
+    </BrowserRouter> */}
+    
+
+
+
     
     </>
   )
