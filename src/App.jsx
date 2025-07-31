@@ -1,4 +1,5 @@
 import Counter from './Counter'
+import StopWatch from './stopWatch'
 import './App.css'
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <>
-     <Counter/>
+     {/* <Counter/> */}
+     <StopWatch/>
     </>
   )
 }
