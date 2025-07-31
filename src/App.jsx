@@ -11,10 +11,10 @@ import Parent3 from './ReactMemo/Parent'
 import Counter1 from './Context/Counter'
 import Counter2 from './useReducer/Counter2'
 import './App.css'
+import React,{ Suspense } from 'react'
 
+const Lazy=React.lazy(()=>import('./ReactLazy.jsx/Counter'))
 function App() {
- 
-
   return (
     <>
     {/* <Parent/> */}
@@ -22,7 +22,10 @@ function App() {
     {/* <Parent2/> */}
     {/* <Parent3/> */}
     {/* <Counter1/> */}
-    <Counter2/>
+    {/* <Counter2/> */}
+    <Suspense fallback={'loading'}>
+    <Lazy/>
+    </Suspense>
     {/* <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
