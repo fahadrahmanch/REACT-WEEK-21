@@ -14,6 +14,7 @@ import Counter4 from './Redux/Counter4'
 import './App.css'
 import React,{ Suspense } from 'react'
 import SiblingParent from './Sibling - communication/Parent'
+import ParentRef from './forwardRef/ParentRef';
 const Lazy=React.lazy(()=>import('./ReactLazy.jsx/Counter'))
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
     {/* <Counter1/> */}
     {/* <Counter2/> */}
     {/* <Counter4/> */}
-    <SiblingParent/>
+    {/* <SiblingParent/> */}
+    <ParentRef/>
     {/* <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
