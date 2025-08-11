@@ -16,6 +16,9 @@ import React,{ Suspense } from 'react'
 import SiblingParent from './Sibling - communication/Parent'
 import ParentRef from './forwardRef/ParentRef';
 const Lazy=React.lazy(()=>import('./ReactLazy.jsx/Counter'))
+import Counter5 from './ErrorBoundary/Counter'
+import { ErrorBoundary } from 'react-error-boundary'
+import Fallback from './ErrorBoundary/fllback'
 function App() {
   return (
     <>
@@ -27,7 +30,11 @@ function App() {
     {/* <Counter2/> */}
     {/* <Counter4/> */}
     {/* <SiblingParent/> */}
-    <ParentRef/>
+    {/* <ParentRef/> */}
+    <ErrorBoundary FallbackComponent={Fallback}>
+    <Counter5/>
+    </ErrorBoundary>
+
     {/* <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
